@@ -48,6 +48,56 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     }
   })
 
+  .state('tab.home', {
+    url: '/home',
+    views: {
+      'tab-home': {
+        templateUrl: 'templates/tab-home.html',
+        controller: 'HomeCtrl'
+      }
+    }
+  })
+
+  .state('tab.important', {
+    url: '/important',
+    views: {
+      'tab-important': {
+        templateUrl: 'templates/tab-important.html',
+        controller: 'ImportantCtrl'
+      }
+    }
+  })
+
+  .state('tab.sparetime', {
+    url: '/sparetime',
+    views: {
+      'tab-sparetime': {
+        templateUrl: 'templates/tab-sparetime.html',
+        controller: 'SparetimeCtrl'
+      }
+    }
+  })
+
+  .state('tab.info', {
+    url: '/info',
+    views: {
+      'tab-info': {
+        templateUrl: 'templates/tab-info.html',
+        controller: 'InfoCtrl'
+      }
+    }
+  })
+
+  .state('tab.settings', {
+    url: '/settings',
+    views: {
+      'tab-settings': {
+        templateUrl: 'templates/tab-settings.html',
+        controller: 'SettingsCtrl'
+      }
+    }
+  })
+
   .state('tab.chats', {
       url: '/chats',
       views: {
