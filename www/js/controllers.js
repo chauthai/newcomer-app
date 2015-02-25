@@ -10,6 +10,7 @@ angular.module('starter.controllers', [])
 
 .controller('SettingsCtrl', function($scope) {
   $scope.settings = {
-    enableFriends: true
+    enableNotifications: true,
+    enableGeolocation: false
   };
 });
